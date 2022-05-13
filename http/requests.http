@@ -1,0 +1,39 @@
+POST http://localhost:3000/parser
+Content-Type: application/json
+
+{
+  "parse_data": [
+  {
+    "count" : 24.0,
+    "actual_title" : "executivo de vendas",
+    "actual_title_normalized" : "executivo de vendas"
+  },
+    {
+      "count" : 24.0,
+      "actual_title" : "administração",
+      "actual_title_normalized" : "administração"
+    },
+    {
+      "count" : 26.0,
+      "actual_title" : "motorista de caminhão",
+      "actual_title_normalized" : "motorista de caminhão"
+    }
+  ]
+}
+
+
+###################################
+#
+###################################
+POST https://r6glcqonfa.execute-api.us-east-1.amazonaws.com/parser
+Content-Type: application/json
+
+{
+  "parse_data": [
+    {
+      "count" : 24.0,
+      "actual_title" : "executivo de vendas",
+      "actual_title_normalized" : "executivo de vendas"
+    }
+  ]
+}
